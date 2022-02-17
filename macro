@@ -1,0 +1,19 @@
+#include<stdio.h>
+#define SIZE 40
+ void main(){
+    int a[40]={7,8,9,11,10};
+    int l=0,s=0,i;
+    
+    for (i=0;i<SIZE;i++){
+        if (a[i]>l){
+            s=l;
+            l=a[i];
+        }
+            else if(a[i]>s){
+            
+                s=a[i];
+            }
+        }
+        printf("the second largest is%d",s);
+    }   
+    
